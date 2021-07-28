@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 //our data
 import { carData } from '../data/data';
 //styles
@@ -26,13 +27,25 @@ const useMousePosition = () => {
   return mousePosition;
 };
 
+//animations
+const list = {
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.4,
+      ease: 'easeInOut',
+    },
+  },
+  hidden: { opacity: 0 },
+};
+
 function Home() {
   const [activeIndex, setActiveIndex] = useState(-1);
   const [x, y] = useMousePosition();
 
   return (
     <Wrapper>
-      <List>
+      <List initial="hidden" animate="visible" variants={list}>
         {carData.map(({ title }, index) => {
           return (
             <Title

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { motion } from 'framer-motion';
+
 export const Span = styled.span``;
 
 export const Wrapper = styled.div`
@@ -27,7 +29,7 @@ export const Heading = styled.h3`
   }
 `;
 
-export const List = styled.div`
+export const List = styled(motion.div)`
   z-index: 1;
   mix-blend-mode: difference;
   width: 50%;
@@ -36,7 +38,7 @@ export const List = styled.div`
   }
 `;
 
-export const ItemWrapper = styled.div`
+export const ItemWrapper = styled(motion.div)`
   display: inline-block;
   margin-right: 1.25rem;
   margin-bottom: 1.25rem;
