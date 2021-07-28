@@ -62,9 +62,6 @@ export const Image = styled.img`
   max-width: 60%;
   object-fit: contain;
   pointer-events: none;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 `;
 
 export const MediaContainer = styled.div`
