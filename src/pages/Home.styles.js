@@ -55,6 +55,7 @@ export const ItemWrapper = styled.div`
 export const Image = styled.img`
   opacity: ${({ active }) => (active ? '1' : '0')};
   position: absolute;
+  filter: grayscale(1);
   width: auto;
   height: auto;
   max-height: 50%;
