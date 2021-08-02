@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 //our data
 import { carData } from '../data/data';
 //styles
-import { Wrapper, List, MediaContainer } from './Home.styles';
+import { Wrapper, List, MediaContainer, TopHeader } from './Home.styles';
 //components
 import Title from '../components/Title';
 import Media from '../components/Media';

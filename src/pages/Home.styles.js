@@ -4,12 +4,16 @@ import { motion } from 'framer-motion';
 
 export const Span = styled.span``;
 
+export const TopHeader = styled.h1`
+  font-weight: 900;
+`;
 export const Wrapper = styled.div`
   height: 100vh;
   width: 100%;
   padding: 0rem 5rem;
   background-color: #eee;
   display: flex;
+  flex-direction: column;
   align-items: center;
   position: relative;
   justify-content: center;
